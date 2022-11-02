@@ -1,0 +1,10 @@
+from collections import Counter
+n=int(input())
+
+words=list(input() for i in range(n))
+
+#no of unique words
+print(len(Counter(words)))
+
+#frequency of distict value
+print(*Counter(words).values())
